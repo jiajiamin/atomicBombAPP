@@ -2,12 +2,12 @@ from flask import Flask,render_template,request,redirect,make_response,session
 import pymysql
 
 def connect():
-    db = pymysql.connect('localhost', 'root', '123456', 'lixiaohuan', charset='utf8',cursorclass=pymysql.cursors.DictCursor)
+    db = pymysql.connect('localhost', 'root', 'lz1022', 'lixiaohuan', charset='utf8',cursorclass=pymysql.cursors.DictCursor)
     return db
 
 app = Flask(__name__)
 app.secret_key="123456"
-
+#qqqq
 #404错误
 @app.errorhandler(404)
 def error(error):
